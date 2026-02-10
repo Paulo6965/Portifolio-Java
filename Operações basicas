@@ -20,7 +20,10 @@ public class Main
 		
 		int divisão = numero1 / numero2;
 		
-		System.out.println("O resultado da some e: " + soma + "o da subtração e: " + subtração + "o da multiplição e: " + multiplição + "e o da divisão e:" + divisão +);
+		System.out.println("O resultado da soma e : " + soma + "!");
+		System.out.println("O resultado da subtração  e : " + subtração + "!");
+		System.out.println("O resultado da multiplicação e : " + multiplicação + "!");
+		System.out.println("O resultado da divisão e : " + divisão + "!");
 		
 		scanner.close();
 	}
