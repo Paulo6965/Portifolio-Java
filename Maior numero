@@ -8,11 +8,13 @@ public class Main
         System.out.print("Digite o primeiro numero: ");
         int num1 = scanner.nextInt();
         
-        System.out.print("Digite o segundo numero");
+        System.out.print("Digite o segundo numero: ");
         int num2 = scanner.nextInt();
         
         if (num1 > num2){
-            System.out.print("O numero e maior");
+            System.out.print("O primeiro numero e maior");
+        }else {
+            System.out.print("O segundo numero e maior");
         }
 	}
 }
