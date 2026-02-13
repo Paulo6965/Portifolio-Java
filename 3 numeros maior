@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o primeiro numero: ");
+        int num1 = scanner.nextInt();
+    
+        System.out.print("Digite o segundo numero: ");
+        int num2 = scanner.nextInt();
+        
+        System.out.print("Digite o terceiro numero: ");
+        int num3 = scanner.nextInt();
+        
+        if(num1 > num2){
+            if (num1 > num3){
+                System.out.print("O primeiro numero e o maior");
+        } 
+        } else if(num2 > num1){
+            if(num2 > num3){
+                System.out.print("O segundo numero e o maior");
+        }else {
+            System.out.print("O terceiro numero e o maior");
+        }
+            }
+        }
+            }
