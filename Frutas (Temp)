@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite a primeira fruta: ");
+		String F1 = scanner.nextLine();
+		
+		System.out.print("Digite o segundo numero: ");
+		String F2 = scanner.nextLine();
+		
+		String temp;
+		
+		temp = F1;
+		F1 = F2;
+		F2 = temp;
+		
+		System.out.println("A primeira fruta e " + F1 + " e a segunda e " + F2 + "!");
+		
+		scanner.close();
+	}
+}
