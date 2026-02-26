@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite a primeira nota: ");
+		Double nota1 = scanner.nextDouble();
+		
+		System.out.print("Digite a segunda nota: ");
+		Double nota2 = scanner.nextDouble();
+		
+		System.out.print("Digite a terceira nota: ");
+		Double nota3 = scanner.nextDouble();
+		
+		System.out.print("Digite a quarta nota: ");
+		Double nota4 = scanner.nextDouble();
+		
+	    Double media = (nota1 + nota2 + nota3 + nota4) / 4;
+	    
+	    if (media <= 5.9){
+	        System.out.print("Voce tirou uma Nota E!");
+	       } else if (media <= 6.9){
+	           System.out.print("Voce tirou uma nota D!");
+	       } else if (media <= 7.9){
+	           System.out.print("Voce tirou uma nota C!");
+	       } else if (media <= 8.9){
+	           System.out.print("Voce tirou uma nota B!");
+	       } else {
+	               System.out.print("Voce tirou uma nota A!");
+	       }
+	   }  
+}
