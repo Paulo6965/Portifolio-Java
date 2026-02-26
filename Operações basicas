@@ -7,18 +7,18 @@ public class Main
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Digite o primeiro numero: ");
-		int numero1 = scanner.nextInt();
+		float numero1 = scanner.nextInt();
 		
 		System.out.print("Digite o segundo numero: ");
-		int numero2 = scanner.nextInt();
+		float numero2 = scanner.nextInt();
 		
-		int soma = numero1 + numero2;
+		float soma = numero1 + numero2;
 		
-		int subtração = numero1 - numero2;
+		float subtração = numero1 - numero2;
 		
-		int multiplicação = numero1 * numero2;
+		float multiplicação = numero1 * numero2;
 		
-		int divisão = numero1 / numero2;
+		float divisão = numero1 / numero2;
 		
 		System.out.println("O resultado da soma e : " + soma + "!");
 		System.out.println("O resultado da subtração  e : " + subtração + "!");
