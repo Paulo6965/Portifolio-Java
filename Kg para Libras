@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite o seu peso: ");
+		Double peso = scanner.nextDouble();
+		
+		Double peso_libras = peso * 2.20462; 
+		
+		System.out.println("Seu peso em Kg e: " + peso + "!" + "\n e seu peso em libras e: " + peso_libras + "!");
+		
+		scanner.close();
+	}
+}
