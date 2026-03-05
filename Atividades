@@ -164,3 +164,44 @@ public class Main
 	}
 }
 
+/*
+Exercicio 9
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite um numero: ");
+        int num1 = scanner.nextInt();
+        
+        if (num1 % 2 == 0){
+            System.out.print("O numero e par");
+        }else {
+            System.out.print("O numero e impar");
+        }
+	}
+}
+
+/*
+Exercicio 10
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite quantos reais voce tem: ");
+        Double real = scanner.nextDouble();
+        
+       Double dolar = real * 0.19;
+       
+       System.out.println("Voce pode comprar %.2f/n " +dolar+ " com R$ %.2f/n " +real+ "!");
+	}
+}
