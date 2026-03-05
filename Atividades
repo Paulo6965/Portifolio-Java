@@ -1,0 +1,134 @@
+/*
+Exercicio 1
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite a primeira nota: ");
+		int nota1 = scanner.nextInt();
+		
+		System.out.print("Digite a segunda nota: ");
+		int nota2 = scanner.nextInt();
+		
+		System.out.print("Digite a terceira nota: ");
+		int nota3 = scanner.nextInt();
+		
+	    int media = (nota1 + nota2 + nota3) / 3;
+		
+		System.out.println("A nota media e de: " + media);
+		
+		scanner.close();
+	}
+}
+
+/*
+Exercicio 2
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.print("Digite a temperatura em Celsius: ");
+		Double temp_C = scanner.nextDouble();
+		
+		Double temp_F = temp_C * 1.8 + 32;
+		
+		System.out.println("A temperatura em Celsius e de " + temp_C + " e em fahrenheit e de " + temp_F + "!");
+	}
+}
+/*
+Exercicio 3
+*/
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.print("Digite o preço do produto: ");
+		Double preco = scanner.nextDouble();
+		
+		System.out.print("Digite o valor do desconto: ");
+		Double desc1 = scanner.nextDouble();
+		
+		Double desc2 = desc1 / 100;
+		
+		Double produto_desc = preco * desc2;
+		
+		System.out.println("O valor do produto sem o desconto e de " + preco + " e com o desconto ele fica por " + produto_desc + "!");
+	}
+}
+
+/*
+Exercicio 4 
+*/
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.print("Digite o numero que voce quer consultar: ");
+		int numero = scanner.nextInt();
+		
+		int n2 = numero * 2;
+		int n3 = numero * 3;
+		int n4 = numero * 4;
+		
+		System.out.println("O numero que voce escolheu foi o " +numero);
+		System.out.println("Ele multiplicado por 1 e " +numero);
+    	System.out.println("Ele multiplicado por 2 e " +n2);
+	    System.out.println("Ele multiplicado por 3 e " +n3);
+	    System.out.println("Ele multiplicado por 4 e " +n4);
+	}
+}
+
+/*
+Exercicio 5 
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.print("Digite o valor da base: ");
+		int base = scanner.nextInt();
+		
+		System.out.print("Digite o valor da altura: ");
+		int alt = scanner.nextInt();
+		
+		int peri = base * 2 + alt * 2;
+		
+		System.out.println("O valor do perimetro e de " +peri+ "!");
+	}
+}
+
+/*
+Exercicio 6
+*/
+
+/*
+Exercicio 7
+*/
+
