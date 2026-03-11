@@ -205,3 +205,104 @@ public class Main
        System.out.println("Voce pode comprar %.2f/n " +dolar+ " com R$ %.2f/n " +real+ "!");
 	}
 }
+
+/*
+Exercicio 11
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+	System.out.print("Digite o seu peso: ");
+	int peso = scanner.nextInt();
+	
+	System.out.print("Digite sua altura em metros: ");
+	Double altura = scanner.nextDouble();
+	
+	Double IMC = peso / (altura * altura);
+	System.out.println("Seu IMC e de: " +IMC+ "!");
+	}
+}
+
+/*
+Exercicio 12
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+	System.out.print("Digite o primeiro numero: ");
+	int num1 = scanner.nextInt();
+	
+	System.out.print("Digite o segundo numero: ");
+	int num2 = scanner.nextInt();
+	
+	int num3 = num1 * num2 / num1;
+	int num4 = num2 * num1 / num2;
+	System.out.println("O primeiro numero era " +num1+ " agora e de " +num3+ "\ne o segundo numero era " +num2+ " e agora e " +num4);
+	}
+}
+
+/*
+Exercicio 13
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+	System.out.print("Digite um ano: ");
+	int ano = scanner.nextInt();
+	
+	int sec = (ano / 100) + 1;
+	System.out.println("O ano de " +ano+ " pertence ao seculo " +sec);
+	}
+}
+
+/*
+Exercicio 14
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+	System.out.print("Digite quantos minutos voce deseja converter em horas: ");
+	int min = scanner.nextInt();
+	
+	int hora = min / 60;
+	int Rmin = min% 60;
+	System.out.println(min+ " minutos e igual a: \n" +hora+ " horas e " +Rmin+ " minutos!");
+	}
+}
+/*
+Exercicio 15
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+	System.out.print("Digite a altura da piramide: ");
+	int h = scanner.nextInt();
+	
+	System.out.print("Digite a base da piramide: ");
+	int b = scanner.nextInt();
+	
+	int area = (h * b) /2;
+	System.out.println("A area dessa piramide e de " +area);
+	}
+}
+
