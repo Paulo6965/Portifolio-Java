@@ -25,7 +25,8 @@ public class Main
 		
 		scanner.close();
 	}
-}
+}char PN = nome.charAt(0);
+	    char PS = sobrenome.charAt(0);
 
 /*
 Exercicio 2
@@ -128,6 +129,25 @@ public class Main
 Exercicio 6
 */
 
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =  new Scanner(System.in);
+	    
+	    System.out.print("Digite seu nome: ");
+	    String nome = scanner.nextLine();
+	    
+	    System.out.print("Digite seu sobrenome: ");
+	    String sobrenome = scanner.nextLine();
+	    
+	    char PN = nome.charAt(0);
+	    char PS = sobrenome.charAt(0);
+	    
+	    System.out.println("A primeira letra do seu nome e " +PN+ " e a do seu sobrenome e " +PS);
+	}
+}
+
 /*
 Exercicio 7
 */
@@ -223,7 +243,7 @@ public class Main
 	Double altura = scanner.nextDouble();
 	
 	Double IMC = peso / (altura * altura);
-	System.out.println("Seu IMC e de: " +IMC+ "!");
+	System.out.printf("Seu IMC e de: %.2f! " ,IMC);
 	}
 }
 
