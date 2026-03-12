@@ -326,3 +326,113 @@ public class Main
 	}
 }
 
+/*
+Exercicio 16
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =  new Scanner(System.in);
+	    
+	    System.out.print("Digite sua idade: ");
+	    int idade = scanner.nextInt();
+	    
+	    if (idade > 17){
+	        System.out.println("Voce e maior de idade (cuidado que o exercito ta de olho)");
+	    }else{
+	        System.out.println("Voce e menor de idade e não pode beber nem dirigir");
+	    }
+	}
+}
+
+/*
+Exercico 17
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =  new Scanner(System.in);
+	    
+	    System.out.print("Digite quantos litros de gasolina voce abasteceu: ");
+	    Double litros = scanner.nextDouble();
+	    
+	    System.out.print("Digite quantos Reais voce pagou: ");
+	    Double total = scanner.nextDouble();
+	    
+	    Double PL = total / litros;
+	    
+	    
+	    System.out.printf("O preço por litros de gasolina e de: R$%.2f!" ,PL);
+	}
+}
+
+/*
+Exercico 18
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =  new Scanner(System.in);
+	    
+	    System.out.print("Digite quantos reais foi a compra: ");
+	    Double VC = scanner.nextDouble();
+	    
+	    if (VC > 99.99){
+	        Double VD = VC * 0.95;
+	        System.out.printf("Voce recebeu um desconto e o valor agora e de: %.2f!" ,VD);
+	    }else{
+	        System.out.println("Voce não recebeu desconto e tera que pagar o valor total de " +VC+ "!");
+	    }
+	}
+}
+
+/*
+Exercicio 19
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =  new Scanner(System.in);
+	    
+	    System.out.print("Digite o nome da sua rua: ");
+	    String rua = scanner.nextLine();
+	    
+	    System.out.print("Digite a sua cidade: ");
+	    String cidade = scanner.nextLine();
+	    
+	    System.out.print("Digite o seu bairro: ");
+	    String bairro = scanner.nextLine();
+	    
+	    System.out.print("Digite o numero do seu endereço: ");
+	    int num = scanner.nextInt();
+	    
+	    System.out.println("O seu endereço e rua " +rua+ " numero " +num+ " no bairro " +bairro+ " na cidade " +cidade);
+	}
+}
+
+/*
+Exercicio 20
+*/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =  new Scanner(System.in);
+	    
+	    System.out.print("Digite um numero: ");
+	    int num = scanner.nextInt();
+	
+	    int quadrado = num * num;
+	    int cubo = num * num * num;
+	
+	    System.out.println("numero " +num+ " elevado ao quadrado e " +quadrado+ " e ao cubo e " +cubo);
+	}
+}
