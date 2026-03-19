@@ -18,3 +18,31 @@ public class Main
     System.out.print("Voce andou " +DistKm+ " KM " +DistM+ " metros " +DistMI+ " milhas e sua velocidade media foi " +Velo+ " m/min!");
     }
 }
+
+/*
+Atividade 3 
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in); 
+	
+	System.out.print("Qual o destino final? ");
+    String dest = sc.nextLine();
+	System.out.print("Digite aqui à distancia da viagem: ");
+    Double DistKm = sc.nextDouble();
+    System.out.print("Digite aqui quantos Km por litro o carro faz: ");
+    Double LKM =sc.nextDouble();
+    System.out.print("Quantos passageiros irão nessa viagem? ");
+    int passageiros =sc.nextInt();
+    Double P_Gas = 6.46;
+    
+    Double LN = DistKm / LKM;
+    Double GG = P_Gas * LN;
+    Double Div = GG / passageiros;
+    Double TR = 1.1 * passageiros;
+    System.out.print("Cada passageiro devera pagar " +Div+ " e devera pagar mais" +TR+ " como taxa de reserva nessa viagem para " +dest);
+    }
+}
